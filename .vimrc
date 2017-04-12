@@ -1,3 +1,10 @@
+" vim 8.0 update
+" sudo add-apt-repository ppa:jonathonf/vim
+" sudo apt update
+" sudo apt install vim
+" Install Vundle
+" $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
