@@ -7,6 +7,7 @@
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
+syntax on
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -35,6 +36,10 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 let g:ale_sign_column_always = 1
+
+let g:ycm_server_keep_logfiles = 1
+let g:ycm_server_log_level = 'debug'
+
 autocmd vimenter * NERDTree
 autocmd vimenter * TagbarToggle
 
