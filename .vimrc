@@ -9,6 +9,10 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
 
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -40,8 +44,8 @@ let g:ale_sign_column_always = 1
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
 
-autocmd vimenter * NERDTree
-autocmd vimenter * TagbarToggle
+" autocmd vimenter * NERDTree
+" autocmd vimenter * TagbarToggle
 
 
 " Line numbers
@@ -58,3 +62,6 @@ inoremap ' ''<LEFT>
 set mouse=a
 " set tabstop=4
 " set shiftwidth=4
+
+" Enable folding with the spacebar
+nnoremap <space> za
